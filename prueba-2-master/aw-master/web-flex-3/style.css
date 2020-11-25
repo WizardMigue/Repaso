@@ -12,18 +12,21 @@ body {
     align-content: flex-start;
 }
 
-header, nav, aside, main, footer{
+header,
+nav,
+aside,
+main,
+footer {
     padding: 15px;
     border: 1px solid black;
     flex-basis: 100%;
- }
+}
 
+main>p {
+    hyphens: auto;
+}
 
- main>p{
-     hyphens: auto;
- }
-
- nav{
+nav {
     height: 40px;
     padding: 8.5px;
     display: flex;
@@ -31,7 +34,7 @@ header, nav, aside, main, footer{
     align-items: center;
 }
 
-nav>a{
+nav>a {
     padding: 5px;
     background-color: darkcyan;
     border-radius: 3px;
@@ -42,69 +45,69 @@ nav>a{
     border: 1px solid darkcyan;
 }
 
-nav>a:hover{
+nav>a:hover {
     background-color: white;
     color: darkcyan;
     transform: rotateZ(2deg);
 }
 
-footer{
+footer {
     display: none;
-
 }
 
-header{
+header {
     height: 50px;
 }
 
- aside{
-     flex-basis: 70px;
-     padding: 5px;
-     flex-grow: 0;
-     min-height: calc( 100vh - 50px - 40px );
-     text-align: center;
- }
+aside {
+    flex-basis: 70px;
+    padding: 5px;
+    flex-grow: 0;
+    min-height: calc( 100vh - 50px - 40px);
+    text-align: center;
+}
 
- main{
-     flex-basis: 70%;
-     flex-grow: 1;
-     overflow: auto;
-     height: calc( 100vh - 50px - 40px );
- }
- aside > h1{
-     /* text-align: start; */
- }
- aside > a > img {
-     width: 58px;
- }
+main {
+    flex-basis: 70%;
+    flex-grow: 1;
+    overflow: auto;
+    height: calc( 100vh - 50px - 40px);
+}
 
- aside > a > span {
-     font-size: 0.7em;
+aside>h1 {
+    /* text-align: start; */
+}
 
- }
- hr{
-     margin-top: 5px;
- }
+aside>a>img {
+    width: 58px;
+}
 
+aside>a>span {
+    font-size: 0.7em;
+}
 
- @media (min-width: 700px){
-    aside{
+hr {
+    margin-top: 5px;
+}
+
+@media (min-width: 700px) {
+    aside {
         flex-basis: 150px;
-        min-height: calc( 100vh - 50px - 40px - 50px );
+        min-height: calc( 100vh - 50px - 40px - 50px);
     }
-    aside > a{
+    aside>a {
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-    footer{
+    footer {
         display: block;
         height: 50px;
     }
-    main{
-        height: calc( 100vh - 50px - 40px - 50px );
+    main {
+        height: calc( 100vh - 50px - 40px - 50px);
     }
-    nav>a{
+    nav>a {
         width: 120px;
     }
- }
+}
