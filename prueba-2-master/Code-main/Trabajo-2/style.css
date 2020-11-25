@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,11 +20,11 @@ nav > a {
     display: inline-block;
     width: 20px;
     height: 95%;
-    margin-left: 35px;
+    margin-left: 45px;
 }
 
 nav > a > img {
-    height: 80%;
+    height: 90%;
 }
 
 nav > a > p{
@@ -59,7 +60,7 @@ aside > a {
     display: inline-block;
     width: 20px;
     height: 95%;
-    margin-left: 35px;
+    margin-left: 45px;
 }
 
 section{
@@ -68,9 +69,16 @@ section{
 #videooso{
     width: auto;
     margin: auto;
+    display: block;
 }
 
 #caballo{
+    display: block;
+    align-content: center;
+    margin: auto;
+}
+
+#videoyou{
     display: block;
     align-content: center;
     margin: auto;
@@ -89,9 +97,77 @@ aside > a > p{
 /* Versión para tablet */
 
 @media (min-width: 480px){
+    nav{
+        position: absolute;
+        z-index: 1;
+        background-color: lightcoral;
+        height: 40px;
+        width: 100%;
+    }
+
+    header{
+        top: 40px;
+        overflow: scroll;
+        left: 70px;
+        width: 90%;
+        z-index: 1;
+        min-width: calc(100vh - 0);
+        position: absolute;
+
+    }
+
+    section{
+        left: 0px;
+        overflow: scroll;
+        min-width: calc(100vh - 250px);
+        position: relative;
+    }
+    
+    nav > a {
+        display: inline-block;
+        width: 20px;
+        height: 95%;
+        margin-left: 95px;
+        
+    }
+    
+    nav > a > img {
+        height: 90%;
+    }
+    
+    nav > a > p{
+        display: none;
+    }
+
+    aside{
+        position: absolute;
+        min-height: calc(100vh - 0px);
+        width: 10%;
+    }
+
+    aside > a {
+        display: inline;
+        
+
+        
+    }
+    aside > a > img {
+        width: 35px;
+        height: 5%;
+        margin-top: 85px;
+    }
+    
+    aside > a > p{
+        display: none;
+    }
+
+    aside > a{
+        margin: auto;
+    
+    }
     
 }
-@media (min-width: 800px){
+@media (min-width: 730px){
     header{
         width: 100%;
         height: 50px;
