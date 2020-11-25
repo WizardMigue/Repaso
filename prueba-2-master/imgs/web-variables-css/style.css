@@ -1,0 +1,32 @@
+body{
+    background-color: var(--colorSecundario);
+}
+
+li{
+    list-style: none;
+    font-size: x-large;
+    background-color: var(--textosecundario);
+    color: var(--textoprimario)
+    
+    
+}   
+
+:root{
+    --colorPrimario: #8ae31e;
+    --textoprimario: white;
+    --colorSecundario: #dcf7bc;
+    --textosecundario: blue;
+    --iconomundo: "\1F30D";
+    --inconoflecha: "\27A1";
+}
+
+li::before{
+    content: var(--iconomundo)"texto"var(--inconoflecha);;
+    
+}
+
+li::after{
+    content: ".";
+    text-decoration: underline;
+    font-size: 60pt;
+}

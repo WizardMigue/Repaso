@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: khaki;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+#tabla-flex {
+    display: flex;
+    padding: 1px;
+    width: 100%;
+    background-color: crimson;
+}
+
+div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    border-style: solid;
+    flex-basis: 33%;
+    border-width: 1px;
+    flex-grow: 1;
+    border-color: black;
+    text-align: center;
+    background-color: gray;
+}
+
+#total {
+    flex-grow: 1;
+    flex-basis: 66.3%;
+    text-align: left;
+}

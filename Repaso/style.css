@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: absolute;
+    height: 30px;
+    width: 30%;
+    background-color: red;
+}
+
+nav{
+    position: relative;
+    height: 30px;
+    width: 70%;
+    left: 288px;
+    background-color: green;
+}
+
+aside{
+    position: absolute;
+    height: 400px;
+    width: 30%;
+    background-color: yellow;
+}
+
+main{
+    background-color: orange;
+}
+
+footer{
+    background-color: blue;
+}

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    height: 30px;    
+}
+
+@media (max-width: 400px){
+
+    abbr{
+        display: none;
+    }
+    th{
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
+        
+    }
+    table > head > tr > th{
+        padding: 15px;
+
+
+    }
+
+    tfoot > tr > td{
+        text-align: center;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1px;
+        
+    }
+
+    #comida{
+    background-color: gray;
+    }
+
+    #Recreo{
+    background-color: gray;
+    }
+
+    .amarillo{
+    background-color: gold;
+    }
+
+    .azul{
+    background-color: blue;
+    }
+
+    .verde{
+    background-color: lightcoral;
+    }
+    .morado{
+        background-color: rebeccapurple;
+    }
+    #derecha{
+    text-align: end;
+    }
+
+    .verde2{
+    background-color: seagreen;
+    }
+
+    .rojo{
+    background-color: red;
+    }
+
+    .naranja{
+    background-color: orangered;
+    }
+
+    .rosa{
+    background-color: pink;
+    }
+
+    .cian{
+    background-color: turquoise;
+    }
+
+    .marron{
+    background-color: brown;
+    }
+    .fosforito{
+        background-color: lime;
+    }
+    .sing{
+        background-color: tan;
+    }
+}
+
+@media (min-width: 401px){
+
+    span{
+        display: none;
+    }
+    th{
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
+        
+    }
+    table > head > tr > th{
+        padding: 15px;
+
+
+    }
+
+    tfoot > tr > td{
+        text-align: center;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1px;
+        
+    }
+
+#comida{
+    background-color: gray;
+}
+
+#Recreo{
+    background-color: gray;
+}
+
+.amarillo{
+    background-color: gold;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.verde{
+    background-color: lightcoral;
+}
+.morado{
+    background-color: rebeccapurple;
+}
+#derecha{
+    text-align: end;
+}
+
+.verde2{
+    background-color: seagreen;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.naranja{
+    background-color: orangered;
+}
+
+.rosa{
+    background-color: pink;
+}
+
+.cian{
+    background-color: turquoise;
+}
+
+.marron{
+    background-color: brown;
+}
+.fosforito{
+    background-color: lime;
+}
+.sing{
+    background-color: tan;
+}
+
+td > span{
+    background-color: khaki;
+}
+
+}

@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+    margin: 0;
+}
+
+div {
+    background-color: forestgreen;
+    padding: 20px 1%;
+    height: 200px;
+    order: 5;
+    flex-basis: 10%;
+}
+
+div:nth-of-type(4) {
+    height: 200px;
+    font-size: 2em;
+    order: 1;
+    flex-basis: 40%;
+}
+
+div:nth-of-type(5) {
+    height: 200px;
+    font-size: 2em;
+    order: 2;
+    flex-shrink: 2;
+    align-self: flex-end;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,83 @@
+/* Reglas comunes */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: forestgreen;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header {
+    background-color: hotpink;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+#contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 107px;
+}
+
+aside, main, footer {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+aside {
+    background-color: honeydew;
+    padding: 15px;
+}
+
+main {
+    background-color: grey;
+    padding: 15px;
+    order: 2;
+}
+
+header {
+    background-color: gold;
+    padding: 15px;
+}
+
+footer {
+    background-color: fuchsia;
+    padding: 15px;
+    order: 5;
+}
+
+#aside1 {
+    order: 3;
+}
+
+#aside2 {
+    order: 4;
+}
+
+/*tablet*/
+
+@media ( min-width: 768px) {
+    aside {
+        flex-basis: auto;
+    }
+}
+
+@media ( min-width: 1000px) {
+    #aside1 {
+        order: 2;
+    }
+    main {
+        order: 3;
+        flex-basis: 60%;
+    }
+    #aside2 {
+        order: 4;
+    }
+}
